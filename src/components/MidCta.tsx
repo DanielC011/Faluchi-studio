@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import { ArrowRight, MessageCircle, ShieldCheck } from "lucide-react";
 import { siteConfig } from "../config";
 
@@ -10,7 +11,13 @@ export function MidCta() {
       </div>
 
       <div className="mx-auto max-w-4xl px-4 sm:px-6 relative z-10">
-        <div className="rounded-3xl bg-gradient-to-b from-[#151821] to-[#0D1017] border border-[#2563FF]/40 p-8 sm:p-12 text-center shadow-2xl">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.97, y: 20 }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          viewport={{ once: true, margin: "-70px" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="rounded-3xl bg-gradient-to-b from-[#151821] to-[#0D1017] border border-[#2563FF]/40 p-8 sm:p-12 text-center shadow-2xl relative overflow-hidden"
+        >
           
           <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#60A5FA] bg-[#2563FF]/10 px-3 py-1 rounded-full border border-[#2563FF]/20 mb-5">
             O Momento é Agora
@@ -30,11 +37,11 @@ export function MidCta() {
               target="_blank"
               rel="noopener noreferrer"
               id="mid-cta-whatsapp"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 rounded-xl bg-[#2563FF] px-8 py-4 text-base font-bold text-white shadow-lg shadow-[#2563FF]/30 hover:bg-[#1d4ed8] hover:shadow-[#2563FF]/50 active:scale-[0.98] transition-all duration-200"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 rounded-xl bg-[#2563FF] px-8 py-4 text-base font-bold text-white shadow-lg shadow-[#2563FF]/30 hover:bg-[#1d4ed8] hover:shadow-[#2563FF]/50 active:scale-[0.98] transition-all duration-200 group cursor-pointer"
             >
               <MessageCircle className="h-5 w-5" />
               <span>{siteConfig.midCta.buttonText}</span>
-              <ArrowRight className="h-4 w-4" />
+              <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
             </a>
           </div>
 
@@ -43,7 +50,7 @@ export function MidCta() {
             <span>{siteConfig.midCta.microtext}</span>
           </p>
 
-        </div>
+        </motion.div>
       </div>
     </section>
   );

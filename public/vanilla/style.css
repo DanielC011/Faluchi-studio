@@ -79,12 +79,13 @@ a {
 .header-content {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .logo {
   font-family: 'Open Sans', sans-serif;
-  font-size: clamp(2.25rem, 6vw, 4rem);
+  font-size: 1.25rem;
   letter-spacing: -0.02em;
   font-weight: 800;
   display: inline-flex;
@@ -98,7 +99,97 @@ a {
 .logo-studio {
   color: var(--color-blue);
   font-weight: 800;
-  margin-left: 6px;
+  margin-left: 4px;
+}
+
+/* Hero Section Remodeled */
+.hero-section {
+  position: relative;
+  background-color: #08090D;
+  padding: 4.5rem 0 5.5rem 0;
+}
+
+.badge-agency {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  background: rgba(18, 22, 34, 0.8);
+  border: 1px solid #232838;
+  color: #93C5FD;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hero-headline {
+  font-family: 'Open Sans', sans-serif;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  color: #F8FAFC;
+  margin-bottom: 1.25rem;
+}
+
+.hero-headline span {
+  display: block;
+}
+
+.hero-headline-highlight {
+  background: linear-gradient(90deg, #2563FF, #3B82F6, #60A5FA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subheadline {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: #94A3B8;
+  max-width: 680px;
+  margin: 0 auto 2.5rem auto;
+  line-height: 1.6;
+}
+
+.hero-ctas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.btn-secondary {
+  background: rgba(21, 24, 33, 0.8);
+  border: 1px solid #232838;
+  color: #F8FAFC;
+  padding: 0.85rem 1.75rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-secondary:hover {
+  background: #1c2230;
+  border-color: rgba(37, 99, 255, 0.5);
+  color: #ffffff;
+}
+
+.hero-pillars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  border-top: 1px solid #1A2030;
+  color: #94A3B8;
+  font-size: 0.85rem;
 }
 
 .btn-header-cta {
