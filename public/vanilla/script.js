@@ -6,7 +6,7 @@
 const CONFIG = {
   nomeMarca: "FALUCHI STUDIO",
   expert: "Daniel Faluchi",
-  whatsappUrl: "https://wa.me/5521989380500?text=Olá%2C%20quero%20fazer%20um%20orçamento%21%21",
+  whatsappUrl: "https://wa.me/5521989380500?text=Olá%21%20Tenho%20interesse%20em%20criar%20uma%20Landing%20Page%20para%20o%20meu%20negócio%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20serviço%20da%20FALUCHI%20STUDIO.%F0%9F%9A%80",
   instagramUrl: "https://www.instagram.com/faluchi.studio/",
   email: "daniel.faluchi@gmail.com",
 };
